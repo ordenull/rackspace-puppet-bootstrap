@@ -1,0 +1,33 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.build-cmd = {None: ('default',
+                         None)}
+proj.directory-list = [{'dirloc': loc('rackspace_puppet_bootstrap'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-list = [loc('setup.py')]
+proj.file-type = 'shared'
+proj.initial-dir = {None: ('custom',
+                           u'${WING:PROJECT_DIR}/rackspace_puppet_bootstrap')}
+proj.launch-config = {loc('rackspace_puppet_bootstrap/rackspace_puppet_bootstrap.py'): ('p'\
+        'roject',
+        (u'test.xeraweb.net --region ord --rackconnect --ssh-authorized-keys ~/.ssh/id_rsa.pub --puppet-host puppet.xeraweb.net --puppet-ip 10.123.123.123 --flavor general1-1 --verbose',
+         ''))}
+proj.main-file = loc('rackspace_puppet_bootstrap/rackspace_puppet_bootstrap.py')
+proj.pyexec = {None: ('custom',
+                      u'${WING:PROJECT_DIR}/../bin/python')}
+proj.shared-attribute-names = ['proj.shared-attribute-names',
+                               'proj.directory-list',
+                               'proj.build-cmd',
+                               'proj.initial-dir',
+                               'proj.pyexec',
+                               'proj.file-type',
+                               'proj.main-file',
+                               'proj.launch-config']
